@@ -532,3 +532,68 @@ section {
     }
 
 }
+/* =================================
+   OUR SERVICES SECTION
+================================= */
+
+.services-section {
+    background: var(--white);
+}
+
+.services-section .section-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: var(--cream);
+    padding: 40px 28px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #F0E2D8;
+    border-bottom: 5px solid var(--gold);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(116, 27, 53, 0.10);
+}
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.service-card h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    color: var(--burgundy);
+    margin-bottom: 14px;
+}
+
+.service-card p {
+    color: #6D6266;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* MOBILE SERVICES DESIGN */
+
+@media (max-width: 768px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 32px 24px;
+    }
+
+}
