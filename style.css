@@ -878,3 +878,78 @@ section {
     }
 
 }
+/* =================================
+   CORPORATE GIFTING SECTION
+================================= */
+
+.corporate-section {
+    background: linear-gradient(135deg, #F5E7C5, #FFF9F0);
+}
+
+.corporate-box {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 45px;
+    background: var(--white);
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(78, 16, 36, 0.08);
+    text-align: center;
+}
+
+.corporate-box h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 45px);
+    color: var(--burgundy);
+    margin: 20px 0;
+}
+
+.corporate-box > p {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    color: #6D6266;
+    line-height: 1.9;
+}
+
+.corporate-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.corporate-features > div {
+    background: var(--cream);
+    padding: 30px 20px;
+    border-radius: 16px;
+    border-bottom: 4px solid var(--gold);
+}
+
+.corporate-features span {
+    font-size: 35px;
+}
+
+.corporate-features h3 {
+    color: var(--burgundy);
+    margin: 15px 0 10px;
+    font-family: Georgia, serif;
+}
+
+.corporate-features p {
+    color: #6D6266;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* MOBILE CORPORATE DESIGN */
+
+@media (max-width: 768px) {
+
+    .corporate-box {
+        padding: 40px 20px;
+    }
+
+    .corporate-features {
+        grid-template-columns: 1fr;
+    }
+
+}
