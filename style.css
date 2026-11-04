@@ -1770,3 +1770,24 @@ section {
         padding: 40px 20px;
     }
 }
+/* CHRISTMAS PAGE FOOTER */
+
+.christmas-footer {
+    background: #173D2B;
+}
+
+.christmas-footer .footer-links h3 {
+    color: #E8C878;
+}
+
+.christmas-footer .footer-logo span {
+    color: #E8C878;
+}
+
+.christmas-footer .footer-bottom {
+    border-top-color: rgba(232, 200, 120, 0.35);
+}
+
+.christmas-footer .footer-links a:hover {
+    color: #E8C878;
+}
