@@ -1004,3 +1004,69 @@ section {
         grid-template-columns: 1fr;
     }
 }
+/* OUR ACHIEVEMENT SECTION */
+
+.achievement-section {
+    background: linear-gradient(135deg, #741B35, #4E1024);
+    padding: 90px 7%;
+    text-align: center;
+}
+
+.achievement-content {
+    max-width: 850px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 55px 45px;
+    border: 1px solid var(--gold);
+    border-radius: 25px;
+}
+
+.achievement-content .hero-tag {
+    color: var(--gold);
+}
+
+.achievement-content h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 46px);
+    color: var(--white);
+    line-height: 1.3;
+    margin: 22px 0;
+}
+
+.achievement-content p {
+    color: #F9EDEF;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.achievement-content strong {
+    color: var(--gold);
+}
+
+.achievement-badge {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 18px 30px;
+    background: var(--gold);
+    color: var(--deep-burgundy);
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.achievement-badge span {
+    display: block;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+@media (max-width: 768px) {
+    .achievement-section {
+        padding: 60px 5%;
+    }
+
+    .achievement-content {
+        padding: 40px 22px;
+    }
+}
