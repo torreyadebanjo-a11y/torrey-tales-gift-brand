@@ -332,3 +332,104 @@ section {
     }
 
 }
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    padding: 80px 7%;
+    background: linear-gradient(120deg, #FFF9F0, #F7DCE3);
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-tag {
+    display: inline-block;
+    background: var(--light-gold);
+    color: var(--burgundy);
+    padding: 9px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+}
+
+.hero-content h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.15;
+    color: var(--deep-burgundy);
+    margin-bottom: 22px;
+}
+
+.hero-content h1 span {
+    display: block;
+    color: var(--burgundy);
+}
+
+.hero-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #62565B;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 520px;
+}
+
+.hero-image .image-placeholder {
+    min-height: 450px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #F2C7D2, #E8C98B);
+    box-shadow: 0 15px 35px rgba(78, 16, 36, 0.12);
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MOBILE HERO DESIGN */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 65px 6%;
+        gap: 40px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-image .image-placeholder {
+        min-height: 300px;
+    }
+
+}
