@@ -24,6 +24,48 @@
 html {
     scroll-behavior: smooth;
    /* =================================
+   FEATURED PRODUCTS SECTION
+================================= */
+
+.featured-section {
+    background: var(--cream);
+}
+
+.featured-section .section-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+}
+
+.featured-section .product-card {
+    border: 1px solid #F0E2D8;
+}
+
+.featured-section .product-card .image-placeholder {
+    min-height: 260px;
+    background: linear-gradient(135deg, #F7DCE3, #F5E7C5);
+    font-size: 17px;
+    text-align: center;
+    padding: 20px;
+}
+
+.featured-section .product-info p {
+    color: #6D6266;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.featured-cta {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.featured-cta p {
+    margin-bottom: 18px;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    color: var(--burgundy);
+}
+   /* =================================
    
 }
 
