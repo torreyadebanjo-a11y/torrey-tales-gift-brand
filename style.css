@@ -731,3 +731,75 @@ section {
     }
 
 }
+/* =================================
+   CHRISTMAS HAMPERS SECTION
+================================= */
+
+.hampers-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: #FFF9F0;
+}
+
+.hampers-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hampers-content h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 45px);
+    line-height: 1.2;
+    color: var(--burgundy);
+    margin: 20px 0;
+}
+
+.hampers-content p {
+    color: #6D6266;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.hampers-content .btn {
+    margin-top: 12px;
+}
+
+.hampers-image {
+    flex: 1;
+    max-width: 520px;
+    width: 100%;
+}
+
+.hampers-image .image-placeholder {
+    min-height: 430px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #F5E7C5, #F2C7D2);
+    box-shadow: 0 12px 30px rgba(78, 16, 36, 0.10);
+    font-size: 20px;
+}
+
+/* MOBILE HAMPERS DESIGN */
+
+@media (max-width: 768px) {
+
+    .hampers-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .hampers-content {
+        max-width: 100%;
+    }
+
+    .hampers-image {
+        max-width: 100%;
+    }
+
+    .hampers-image .image-placeholder {
+        min-height: 300px;
+    }
+
+}
