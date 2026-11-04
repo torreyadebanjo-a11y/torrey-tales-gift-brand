@@ -1635,3 +1635,69 @@ section {
         grid-template-columns: 1fr;
     }
 }
+/* =================================
+   CHRISTMAS HAMPERS SECTION
+================================= */
+
+.christmas-hampers-section {
+    background: #F3E8D8;
+    padding: 90px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.christmas-hampers-image .image-placeholder {
+    min-height: 420px;
+    background: #D9E4D6;
+    border: 5px solid #D1AD65;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    color: #173D2B;
+    font-family: Georgia, serif;
+    font-size: 23px;
+}
+
+.christmas-hampers-content h2 {
+    color: #173D2B;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 45px);
+    line-height: 1.3;
+    margin: 22px 0;
+}
+
+.christmas-hampers-content p {
+    color: #6D6266;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.christmas-hampers-content .btn {
+    background: #A52638;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.christmas-hampers-content .btn:hover {
+    background: #173D2B;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+    .christmas-hampers-section {
+        grid-template-columns: 1fr;
+        padding: 65px 6%;
+        gap: 35px;
+    }
+
+    .christmas-hampers-image .image-placeholder {
+        min-height: 300px;
+    }
+}
