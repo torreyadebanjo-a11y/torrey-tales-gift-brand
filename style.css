@@ -1,0 +1,334 @@
+/* =================================
+   TORREY TALES - WEBSITE DESIGN
+================================= */
+
+:root {
+    --cream: #FFF9F0;
+    --burgundy: #741B35;
+    --deep-burgundy: #4E1024;
+    --gold: #D6A84F;
+    --pink: #F7DCE3;
+    --coral: #F28C79;
+    --green: #315C45;
+    --white: #FFFFFF;
+    --dark: #292329;
+    --light-gold: #F5E7C5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* GENERAL SECTION STYLING */
+
+section {
+    padding: 75px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 4vw, 42px);
+    color: var(--burgundy);
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin: auto;
+    color: #6D6266;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    background: var(--burgundy);
+    color: var(--white);
+    font-weight: bold;
+    border: 2px solid var(--burgundy);
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--deep-burgundy);
+    transform: translateY(-3px);
+}
+
+.btn-gold {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--deep-burgundy);
+}
+
+.btn-gold:hover {
+    background: #E8BE6B;
+}
+
+/* NAVIGATION */
+
+#header {
+    background: var(--white);
+    padding: 18px 7%;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+}
+
+/* IMAGE PLACEHOLDERS */
+
+.image-placeholder {
+    min-height: 220px;
+    background: linear-gradient(135deg, var(--pink), var(--light-gold));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--burgundy);
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+/* PRODUCT CARDS */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(116,27,53,0.12);
+}
+
+.product-card .image-placeholder {
+    border-radius: 0;
+    min-height: 240px;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    color: var(--burgundy);
+    margin-bottom: 8px;
+}
+
+/* SERVICES */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 30px 22px;
+    border-radius: 18px;
+    text-align: center;
+    border-bottom: 4px solid var(--gold);
+}
+
+.service-card h3 {
+    color: var(--burgundy);
+    margin-bottom: 12px;
+}
+
+/* CHRISTMAS COLLECTION */
+
+.christmas-section {
+    background: var(--green);
+    color: var(--white);
+}
+
+.christmas-section .section-heading h2 {
+    color: var(--white);
+}
+
+.christmas-section .section-heading p {
+    color: #F5E8D7;
+}
+
+.christmas-banner {
+    background: linear-gradient(135deg, #741B35, #315C45);
+    padding: 50px 25px;
+    border-radius: 22px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 35px;
+}
+
+.christmas-banner h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 5vw, 48px);
+    margin-bottom: 15px;
+}
+
+.christmas-card {
+    background: var(--white);
+    color: var(--dark);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.christmas-card .product-info h3 {
+    color: var(--green);
+}
+
+/* CORPORATE GIFTING */
+
+.corporate-section {
+    background: var(--light-gold);
+}
+
+.corporate-box {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 22px;
+    text-align: center;
+}
+
+/* CUSTOMER REVIEWS */
+
+.review-card {
+    background: var(--white);
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.review-stars {
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+/* ACHIEVEMENTS */
+
+.achievement-section {
+    background: var(--pink);
+    text-align: center;
+}
+
+.achievement-box {
+    max-width: 750px;
+    margin: auto;
+    padding: 35px;
+    background: var(--white);
+    border-radius: 20px;
+}
+
+/* FAQ */
+
+.faq-item {
+    background: var(--white);
+    padding: 22px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+
+.faq-item h3 {
+    color: var(--burgundy);
+    margin-bottom: 8px;
+}
+
+/* ABOUT */
+
+.about-section {
+    background: var(--white);
+}
+
+/* CONTACT */
+
+.contact-section {
+    background: var(--burgundy);
+    color: var(--white);
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: var(--white);
+    font-family: Georgia, serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* FOOTER */
+
+#footer {
+    background: var(--deep-burgundy);
+    color: var(--white);
+    padding: 30px 7%;
+    text-align: center;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 55px 5%;
+    }
+
+    #header {
+        padding: 15px 5%;
+    }
+
+    .corporate-box {
+        padding: 25px 18px;
+    }
+
+    .contact-section h2 {
+        font-size: 29px;
+    }
+
+}
