@@ -1948,3 +1948,14 @@ section {
     margin: 0 auto;
     border-radius: 10px;
 }
+/* HOMEPAGE HERO IMAGE */
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+}
