@@ -1986,8 +1986,8 @@ section {
 .christmas-hampers-image img {
     display: block;
     width: 100%;
-    max-width: 450px;
-    height: 320px;
+    max-width: 300px;
+    height: 240px;
     object-fit: contain;
     margin: 20px auto;
     border-radius: 16px;
